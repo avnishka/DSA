@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# Allow Python files
+!*.py
+
+# Allow .gitignore itself
+!.gitignore
+
+# Ignore common Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
