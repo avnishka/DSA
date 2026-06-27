@@ -49,8 +49,8 @@ def threeSum(nums):
                 ans.append(temp)
                 j += 1
                 k -= 1
-                    while j < k and nums[j - 1] == nums[j]:
-                        j += 1
-                    while j < k and nums[k + 1] == nums[k]:
-                        k -= 1
-        return ans
+                while j < k and nums[j - 1] == nums[j]:
+                    j += 1
+                while j < k and nums[k + 1] == nums[k]:
+                    k -= 1
+    return ans
