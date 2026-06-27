@@ -37,9 +37,9 @@
 def fourSum(nums, target):
     n = len(nums)
     nums.sort()
-    ans = set()
+    ans = []
     if n < 4:
-        return []
+        return ans
     for i in range(n):
         if i > 0 and nums[i] == nums[i - 1]:
             continue
@@ -55,17 +55,16 @@ def fourSum(nums, target):
                 elif total > target:
                     l -= 1
                 else:
-                    temp = [nums[i], nums[j], nums[k], nums[l]]
-                    ans.add(tuple(temp))
+                    ans.append([nums[i], nums[j], nums[k], nums[l]])
                     k += 1
                     l -= 1
                     while k < l and nums[k] == nums[k - 1]:
                         k += 1
                     while k < l and nums[l] == nums[l + 1]:
                         l -= 1
-    return list(ans)
+    return ans
 
 
-nums = []
-target = 0
+nums = [2, 2, 2, 2, 2]
+target = 8
 print(fourSum(nums, target))
