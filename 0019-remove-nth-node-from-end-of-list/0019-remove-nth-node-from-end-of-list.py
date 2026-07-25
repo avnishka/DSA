@@ -16,11 +16,8 @@ class Solution:
         remove=length-n-1
         count=0
         temp=head
-        while temp and temp.next:
-            if count==remove:
-                temp.next=temp.next.next
-                break
+        while count < remove:
             count+=1
             temp=temp.next
-            
+        temp.next=temp.next.next   
         return head
