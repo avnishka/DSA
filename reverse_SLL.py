@@ -22,15 +22,15 @@ class Solution:
         return head
 
     def reverse(self, head: Optional[ListNode]) -> Optional[ListNode]:
-            prev = None
-            temp = head
-            while temp:
-                front = temp.next
-                temp.next = prev
-                prev = temp
-                temp = front
-            head = prev
-            return prev
+        prev = None
+        temp = head
+        while temp:
+            front = temp.next
+            temp.next = prev
+            prev = temp
+            temp = front
+        head = prev
+        return prev
 
 
 def list_to_nodes(arr):
@@ -48,6 +48,37 @@ def nodes_to_list(head):
         out.append(head.val)
         head = head.next
     return out
+
+
+def reverse(self, head):
+    temp = head
+    stack = []
+    while temp:
+        stack.append(temp.data)
+        temp = temp.next
+    temp = head
+    while temp:
+        e = stack.pop()
+        temp.data = e
+        temp = temp.next
+    return head
+
+
+class Solution:
+    def reverse(self, head):
+        if not head or not head.next:
+            return head
+
+        current = head
+        temp = None
+
+        while current:
+            temp = current.prev
+            current.prev = current.next
+            current.next = temp
+            current = current.prev
+
+        return temp.prev
 
 
 if __name__ == "__main__":
