@@ -1,13 +1,15 @@
 class Solution:
     def maxDepth(self, s: str) -> int:
         count=0
-        maxi=float("-inf")
+        maxi=0
+        stack=[]
         for ch in s:
             if ch=="(":
                 count+=1
+                stack.append("(")
+                maxi=max(maxi,count)
             if ch==")":
                 count-=1
-            
-            maxi=max(maxi,count)
+                stack.pop()
         return maxi
         
