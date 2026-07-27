@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0014-longest-common-prefix](https://github.com/avnishka/DSA/tree/master/0014-longest-common-prefix) |
 | [0455-assign-cookies](https://github.com/avnishka/DSA/tree/master/0455-assign-cookies) |
+| [0860-lemonade-change](https://github.com/avnishka/DSA/tree/master/0860-lemonade-change) |
 | [0904-fruit-into-baskets](https://github.com/avnishka/DSA/tree/master/0904-fruit-into-baskets) |
 | [1004-max-consecutive-ones-iii](https://github.com/avnishka/DSA/tree/master/1004-max-consecutive-ones-iii) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/avnishka/DSA/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
@@ -95,4 +96,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/avnishka/DSA/tree/master/0455-assign-cookies) |
+| [0860-lemonade-change](https://github.com/avnishka/DSA/tree/master/0860-lemonade-change) |
 <!---LeetCode Topics End-->
