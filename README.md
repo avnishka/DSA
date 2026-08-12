@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/avnishka/DSA/tree/master/0014-longest-common-prefix) |
+| [0136-single-number](https://github.com/avnishka/DSA/tree/master/0136-single-number) |
 | [0455-assign-cookies](https://github.com/avnishka/DSA/tree/master/0455-assign-cookies) |
 | [0860-lemonade-change](https://github.com/avnishka/DSA/tree/master/0860-lemonade-change) |
 | [0904-fruit-into-baskets](https://github.com/avnishka/DSA/tree/master/0904-fruit-into-baskets) |
@@ -102,4 +103,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/avnishka/DSA/tree/master/0029-divide-two-integers) |
+| [0136-single-number](https://github.com/avnishka/DSA/tree/master/0136-single-number) |
 <!---LeetCode Topics End-->
