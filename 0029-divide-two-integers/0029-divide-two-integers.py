@@ -1,19 +1,26 @@
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
-        d=abs(dividend)
-        dv=abs(divisor)
-        output=0
-        while d>=dv:
-            temp=dv
-            mul=1
-            while d>=temp:
-                d-=temp
-                output+=mul
-                mul+=mul
-                temp+=temp
 
+        negative = (dividend < 0) ^ (divisor < 0)
 
+        dividend = abs(dividend)
+        divisor = abs(divisor)
 
-        if (dividend<0 and divisor>=0) or (divisor<0 and dividend>=0):
-            output=-output
-        return min(2147483647,max(output,-2147483648))
+        quotient = 0
+
+        for i in range(31, -1, -1):
+            if (divisor << i) <= dividend:
+                dividend -= divisor << i
+                quotient += 1 << i
+
+        if negative:
+            quotient = -quotient
+
+        if quotient > 2**31 - 1:
+            return 2**31 - 1
+
+        if quotient < -2**31:
+            return -2**31
+
+        return quotient
+        
